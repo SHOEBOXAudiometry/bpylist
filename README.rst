@@ -5,6 +5,10 @@ Implementation of the `Apple's Binary
 Plist <https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man5/plist.5.html>`__
 and the NSKeyedArchiver format
 
+Note
+-----
+The bplist.so file must be accessible in order for the unit tests to execute. 
+
 Usage
 -----
 
