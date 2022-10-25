@@ -19,6 +19,7 @@ class FooArchive:
     def encode_archive(obj, archive):
         archive.encode('title', obj.title)
         archive.encode('recurse', obj.recursive)
+        archive.encode('stamp', obj.stamp)
 
     def decode_archive(archive):
         title   = archive.decode('title')
