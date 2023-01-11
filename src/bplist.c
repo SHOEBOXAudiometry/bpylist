@@ -4,6 +4,16 @@
 #define likely(x) __builtin_expect(!!(x), 1)
 #define unlikely(x) __builtin_expect(!!(x), 0)
 
+#if defined(_MSC_VER)
+    #define __builtin_bswap32 _byteswap_ulong
+    #define __builtin_bswap64 _byteswap_uint64
+    #define __builtin_clzll   _lzcnt_u64
+    #undef likely
+    #undef unlikely
+    #define likely(x) x
+    #define unlikely(x) x
+#endif
+
 #if __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
 
     #define SwapBigToHost16(x) ((x & 0x00FF) << 8) | ((x & 0xFF00) >> 8)
