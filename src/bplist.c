@@ -12,6 +12,7 @@
     #undef unlikely
     #define likely(x) x
     #define unlikely(x) x
+    typedef SSIZE_T ssize_t;
 #endif
 
 #if __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
