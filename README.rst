@@ -7,7 +7,13 @@ and the NSKeyedArchiver format
 
 Note
 -----
-The bplist.so file must be accessible in order for the unit tests to execute. 
+The bplist.so file must be accessible in order for the unit tests to execute.
+
+Installation
+-----
+1. (For PC) Install Microsoft Visual C++ 14.0 or greater form https://visualstudio.microsoft.com/visual-cpp-build-tools/
+2. Copy contents to machine and execute the command below on the local machine:
+.. code:: pip install .
 
 Usage
 -----
